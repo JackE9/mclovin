@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+
+<html>
+    <title>
+
+    </title>
+    <head>
+
+        <style>
+
+            body {
+                margin: 0px;
+                background-color: #FFC72C;
+            }
+
+            .topBar {
+                background-color: #DA291C;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+            }
+
+            .logo {
+                height: 40px;
+                padding: 10px;
+            }
+
+            .title {
+                margin: 0px;
+                font-size: 40px;
+                color: white;
+                font-weight: bolder;
+                font-family: Helvetica, Arial, sans-serif;
+                padding: 10px;
+            }
+
+            .searchContainer {
+
+                flex: 2;
+                border: none;
+                height: 40px;
+                max-width: 450px;
+                padding: 10px;
+                display: flex;
+                flex-direction: row;
+         
+            }
+
+            .search {
+                flex: 1;
+             
+                border: none;
+
+                border-bottom-left-radius: 2px;
+                border-top-left-radius: 2px;
+
+                color: black;
+                font-size: 30px;
+                font-weight: bolder;
+                font-family: Helvetica, Arial, sans-serif;
+
+                
+            }
+
+            .searchButton {
+                border: none;
+                margin: 0px;
+                font-size: 15px;
+                color: black;
+
+                font-weight: bolder;
+                font-family: Helvetica, Arial, sans-serif;
+                padding: 10px;
+                background-color: #FFC72C;
+
+                border-bottom-right-radius: 2px;
+                border-top-right-radius: 2px;
+
+            }
+            
+            .socialMediaContainer {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: end;
+                padding: 10px;
+            }
+            
+            .socialIcon {
+                height: 40px;
+                padding-left: 10px;
+            }
+            
+            .contentContainer {
+             
+                display: flex;
+                flex-direction: row;
+            }
+
+            .leftBodyContainer {
+
+                padding-top: 10px;
+                padding-bottom: 10px;
+
+ 
+                flex: 1;
+
+                display: flex;
+                flex-direction: column;
+
+                padding-left: 10px;
+                padding-right: 10px;
+
+                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                backdrop-filter: blur( 4px );
+                border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+                
+
+            }
+
+            .rightBodyContainer {
+
+                
+                
+
+                background-color: #FFC72C;
+                flex: 2.5;
+
+                display: flex;
+                flex-direction: column;
+
+                padding-left: 10px;
+                padding-right: 10px;
+
+                align-items: center;
+            }
+
+            .inputContainer {
+
+                
+                display: flex;
+                flex-direction: row;
+
+
+
+            }
+            
+
+            .inputField {
+
+                padding-left: 20px;
+                height: 50px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                border: none;
+                border-bottom-left-radius: 2px;
+                border-top-left-radius: 2px;
+                flex: 7;
+                background-color: black;
+                
+                color: white;
+                font-size: 30px;
+                font-weight: bolder;
+                font-family: Helvetica, Arial, sans-serif;
+              
+            
+            }
+
+            .submitButton {
+                height: 52px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                border: none;
+
+                border-bottom-right-radius: 2px;
+                border-top-right-radius: 2px;
+
+                background-color: #DA291C;
+                flex: 1;
+
+                font-size: 15px;
+                color: white;
+                font-weight: bolder;
+                font-family: Helvetica, Arial, sans-serif;
+                padding: 10px;
+            }
+
+            .foodInput {
+                height: 50px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                border: none;
+                border-radius: 2px;
+            }
+
+            .quickAdd {
+
+                margin-top: 30px;
+                margin-bottom: 5px;
+
+                font-size: 25px;
+
+                color: black;
+                font-weight: bolder;
+                font-family: Helvetica, Arial, sans-serif;
+
+                text-align: center;
+
+            }
+
+            .addButton {
+
+                height: 50px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                
+                border: none;
+                border-radius: 2px;
+
+                font-size: 25px;
+
+                color: white;
+                font-weight: bolder;
+                font-family: Helvetica, Arial, sans-serif;
+
+                background-color: #DA291C;
+            }
+            
+            .favouriteItemsTitle {
+                font-size: 25px;
+
+                color: black;
+                font-weight: bolder;
+                font-family: Helvetica, Arial, sans-serif;
+
+            }
+
+            .list {
+                font-size: 20px;
+
+                color: black;
+                font-weight: bolder;
+                font-family: Helvetica, Arial, sans-serif;
+
+               
+            }
+
+        </style>
+        
+    </head>
+
+    <body>
+
+        <div class="topBar">
+            <img class="logo" src="/Mcdonald'sLogo.png" alt="The Mcdonald's Logo">
+            <h1 class="title">Items I'm McLovin'</h1>
+
+            <div class="searchContainer">
+            <input class="search" type="search">
+            <button class="searchButton">SEARCH</button>
+            </div>
+            
+            <div class="socialMediaContainer">
+
+                <a href="https://facebook.com/" target="_blank">
+                    <img class="socialIcon" src="/facebook-icon.png" alt="facebook icon">
+                </a>
+
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img class="socialIcon" src="/instagram-icon.png" alt="instagram icon">
+                </a>
+
+                <a href="https://www.pinterest.co.uk/" target="_blank">
+                    <img class="socialIcon" src="/pinterest-icon.png" alt="pinterest icon">
+                </a>
+
+                <a href="https://twitter.com/" target="_blank">
+                    <img class="socialIcon" src="/twitter-icon.png" alt="twitter icon">
+                </a>
+  
+            </div>
+        </div>
+
+        <div class="contentContainer">
+
+            <div class="leftBodyContainer">
+
+         
+                <div class="inputContainer">
+                <input class="inputField" id="nameField" type="text" placeholder="Enter your name">
+                <button class="submitButton" id="nameBut">SUBMIT</button>
+                </div>
+
+                <div class="inputContainer">
+                <input class="inputField" id="customFoodField" type="text" placeholder="Enter a menu item">
+                <button class="submitButton" id="customFoodBut">SUBMIT</button>
+                </div>
+
+                
+
+                <p class="quickAdd">Quick add:</p>
+                <button class="addButton" id="bigMacBut">Big Mac</button>
+                <button class="addButton" id="mayoChicBut">Mayo Chicken</button>
+                <button class="addButton" id="hamburgerBut">Hamburger</button>
+                <button class="addButton" id="cheeseburgerBut">Cheeseburger</button>
+                <button class="addButton" id="nuggetBut">Chicken McNuggets</button>
+                <button class="addButton" id="plantBut">McPlant</button>
+                <button class="addButton" id="friesBut">Fries</button>
+                <button class="addButton" id="vegDeluxBut">Vegetable Deluxe</button>
+                <button class="addButton" id="chicSaladBut">Grilled Chicken Salad</button>
+
+
+
+            </div>
+
+            <div class="rightBodyContainer">
+
+                <p class="favouriteItemsTitle" id="personalTitle">Hi, you have [NUMBER] favourite items:</p>
+
+                <ul class="list" id="foodList">
+                    
+                </ul>
+
+
+            </div>
+
+        </div>
+
+        <script>
+
+            let nameField = document.getElementById("nameField")
+
+            let nameBut = document.getElementById("nameBut")
+
+            let usersName = ""
+
+            nameBut.addEventListener("click", function(){
+
+                if (nameField.value === "") {
+
+                } else {
+                usersName = nameField.value
+                nameField.value = ""
+                localStorage.setItem("name", usersName)
+                renderPersonalTitle()
+                }
+                
+            })
+
+            let customFoodField = document.getElementById("customFoodField")
+            let customFoodBut = document.getElementById("customFoodBut")
+
+            customFoodBut.addEventListener("click", function(){
+                favItems.push(customFoodField.value)
+                customFoodField.value = ""
+                renderList()
+                renderPersonalTitle()
+            })
+
+            let foodList = document.getElementById("foodList")
+
+            let favItems = []
+
+            if (JSON.parse(localStorage.getItem("favouriteList")) === null) {
+                console.log("Detected null local favoruite list so not fetching")
+            } else {
+
+            favItems = JSON.parse(localStorage.getItem("favouriteList"))
+            }
+
+ 
+            renderList()
+
+            function renderList() {
+                let htmlToRender = ""
+
+                for (let i = 0; i < favItems.length; i++) {
+                    htmlToRender += `<li>${favItems[i]}</li>`
+                }
+
+                foodList.innerHTML = htmlToRender
+
+                localStorage.setItem("favouriteList", JSON.stringify(favItems))
+            
+            }
+
+            let personalTitle = document.getElementById("personalTitle")
+
+            renderPersonalTitle()
+
+            function renderPersonalTitle() {
+
+                if (localStorage.getItem("name") === "" || localStorage.getItem("name") === null) {
+
+                    personalTitle.textContent = `You have ${favItems.length} favourite items:`
+
+                } else {
+                    personalTitle.textContent = `${localStorage.getItem("name")}, you have ${favItems.length} favourite items:`
+                }
+            }
+            
+            let bigMacBut = document.getElementById("bigMacBut")
+
+            bigMacBut.addEventListener("click", function(){
+                favItems.push("Big Mac")
+                renderList()
+                renderPersonalTitle()
+            })
+
+            let mayoChicBut = document.getElementById("mayoChicBut")
+
+            mayoChicBut.addEventListener("click", function(){
+                favItems.push("Mayo Chicken")
+                renderList()
+                renderPersonalTitle()
+            })
+
+            let hamburgerBut = document.getElementById("hamburgerBut")
+
+            hamburgerBut.addEventListener("click", function(){
+                favItems.push("Hamburger")
+                renderList()
+                renderPersonalTitle()
+            })
+
+            let cheeseburgerBut = document.getElementById("cheeseburgerBut")
+
+            cheeseburgerBut.addEventListener("click", function(){
+                favItems.push("Cheeseburger")
+                renderList()
+                renderPersonalTitle()
+            })
+
+            let nuggetBut = document.getElementById("nuggetBut")
+
+            nuggetBut.addEventListener("click", function(){
+                favItems.push("Chicken McNuggets")
+                renderList()
+                renderPersonalTitle()
+            })
+
+            let plantBut = document.getElementById("plantBut")
+
+            plantBut.addEventListener("click", function(){
+                favItems.push("McPlant")
+                renderList()
+                renderPersonalTitle()
+            })
+
+            let friesBut = document.getElementById("friesBut")
+
+            friesBut.addEventListener("click", function(){
+                favItems.push("Fries")
+                renderList()
+                renderPersonalTitle()
+            })
+
+            let vegDeluxBut = document.getElementById("vegDeluxBut")
+
+            vegDeluxBut.addEventListener("click", function(){
+                favItems.push("Vegetable Delux")
+                renderList()
+                renderPersonalTitle()
+            })
+
+            let chicSaladBut = document.getElementById("chicSaladBut")
+
+            chicSaladBut.addEventListener("click", function(){
+                favItems.push("Grilled Chicken Salad")
+                renderList()
+                renderPersonalTitle()
+            })
+
+
+        </script>
+    </body>
+</html>
